@@ -231,12 +231,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight') openModal(currentIndex + 1);
   });
 
-  /* ---------- CONTACT FORM (no backend — visual only) ---------- */
-  const form = document.getElementById('contactForm');
-  const formStatus = document.getElementById('formStatus');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formStatus.textContent = 'This form isn\'t connected to a backend yet, so this message was not actually sent. Please email directly for now.';
-  });
-
 });
